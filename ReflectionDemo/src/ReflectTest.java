@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
@@ -35,7 +36,9 @@ public class ReflectTest {
         Class cls = Class.forName(className);
 
         //4. 创建对象
-        Object obj = cls.newInstance();
+        //Object obj = cls.newInstance();
+        Constructor constructor = cls.getConstructor();
+        Object obj = constructor.newInstance();
 
         //5. 获取方法对象
         Method method = cls.getMethod(methodName);
