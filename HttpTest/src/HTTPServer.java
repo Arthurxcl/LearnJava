@@ -42,6 +42,7 @@ public class HTTPServer {
         socketIn.read(buffer);
         //将字节数组转成字符串
         String request = new String(buffer);
+        //输出请求内容
         System.out.println(request);
 
         /*解析HTTP请求*/

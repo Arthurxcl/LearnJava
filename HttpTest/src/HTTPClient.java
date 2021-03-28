@@ -13,6 +13,7 @@ public class HTTPClient {
     public static void doGet(String host, int port, String uri) {
         Socket socket = null;
         try {
+            //创建套接字，并连接到指定ip地址上的指定端口
             socket = new Socket(host, port);
         } catch (Exception e) {
             e.printStackTrace();

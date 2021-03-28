@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books>
+    <book sn="SN124534234">
+        <name>Java Core</name>
+        <author>def</author>
+        <price>12.3</price>
+    </book>
+    <book sn="SN54423234">
+        <name>spring</name>
+        <author>boot</author>
+        <price>323.3</price>
+    </book>
+
+</books>
